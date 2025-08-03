@@ -2,5 +2,12 @@
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/products", "destination": "/products.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.winsomelifesciences.com",
+      "permanent": true
+    }
   ]
 }
