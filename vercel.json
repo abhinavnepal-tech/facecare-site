@@ -1,11 +1,23 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/products", "destination": "/products.html" }
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/products",
+      "destination": "/products.html"
+    }
   ],
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "winsomelifesciences.com"
+        }
+      ],
       "destination": "https://www.winsomelifesciences.com",
       "permanent": true
     }
